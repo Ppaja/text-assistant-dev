@@ -13,6 +13,5 @@ if "%choice%"=="1" (
     echo Invalid selection.
 )
 
-rem Hier ein Timeout hinzufügen, damit das Fenster nicht sofort geschlossen wird
-
+rem 
 exit
