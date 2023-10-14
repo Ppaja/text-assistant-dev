@@ -46,6 +46,7 @@ commands = {
 
 # audio command phrases for different tasks
 audio_files = {
+    # SKILLs
     normalize_text("google"): ["Please tell me what to search for", "Of course master, please tell me what to search for", "Please type what you want to search for my master"], 
     normalize_text("youtube"): ["Please tell me what to search for", "Of course master, please tell me what to search for", "Please type what you want to search for my master"],
     normalize_text("github"): ["Of course master, here is GitHub Desktop", "GitHub Desktop is started for you Lord", "But of course master, I am starting GitHub Desktop"], 
