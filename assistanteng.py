@@ -18,6 +18,7 @@ def is_command_similar(text, command_phrase):
 
 commands = {
     # SKILLs
+    normalize_text("rdr2"): "start skills\\rdr2\\rdr2.lnk",
     normalize_text("google"): "start skills\\google\\google.lnk",
     normalize_text("youtube"): "start skills\\google\\youtube.lnk",
     normalize_text("github"): "start %USERPROFILE%\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe",
@@ -46,6 +47,7 @@ commands = {
 
 # audio command phrases for different tasks
 audio_files = {
+    normalize_text("rdr2"): ["I will start Red Dead Redemption 2 my master", "Red Dead Redemption 2 is started for you Lord", "But of course master, I am starting Red Dead Redemption 2"],
     normalize_text("google"): ["Please tell me what to search for", "Of course master, please tell me what to search for", "Please type what you want to search for my master"], 
     normalize_text("youtube"): ["Please tell me what to search for", "Of course master, please tell me what to search for", "Please type what you want to search for my master"],
     normalize_text("github"): ["Of course master, here is GitHub Desktop", "GitHub Desktop is started for you Lord", "But of course master, I am starting GitHub Desktop"], 
