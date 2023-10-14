@@ -16,6 +16,8 @@ def is_command_similar(text, command_phrase):
 # Liste von Befehlen für verschiedene Aufgaben (in Kleinbuchstaben)
 commands = {
     # SKILLs
+    normalize_text("google"): "start skills\\google\\google.lnk",
+    normalize_text("youtube"): "start skills\\google\\youtube.lnk",
     normalize_text("github"): "start %USERPROFILE%\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe",
     normalize_text("code"): "start skills\\VS-Code-Starter\\open.lnk",
     normalize_text("öffne den download"): "explorer %USERPROFILE%\\Downloads",
@@ -42,6 +44,8 @@ commands = {
 
 # Dictionary mit Zuordnung von Befehlen zu Audiodateien (als Listen)
 audio_files = {
+    normalize_text("google"): ["Natürlich Meister, wonach sucht Ihr?", "Nennen Sie mir Ihren Suchbegriff meine Exzellenz"],
+    normalize_text("youtube"): ["Natürlich Meister, wonach sucht Ihr?", "Nennen Sie mir Ihren Suchbegriff meine Exzellenz"],
     normalize_text("github"): ["Natürlich Meister, hier ist der GitHub Desktop", "GitHub Desktop ist für Sie gestartet Lord", "Aber natürlich Herr, ich starte GitHub Desktop"], 
     normalize_text("code"): ["Natürlich Meister, lass uns coden", "Visual Studio Code für Sie gestartet", "Aber natürlich Herr, Sie können beginnen zu coden"],        
     normalize_text("öffne den download ordner"): ["Ja Herr, der download Ordner ist offen", "Natürllich Meister, ich öffne den download Ordner", "Hier ist der download Ordner mein Gebieter"],

@@ -18,6 +18,8 @@ def is_command_similar(text, command_phrase):
 
 commands = {
     # SKILLs
+    normalize_text("google"): "start skills\\google\\google.lnk",
+    normalize_text("youtube"): "start skills\\google\\youtube.lnk",
     normalize_text("github"): "start %USERPROFILE%\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe",
     normalize_text("code"): "start skills\\VS-Code-Starter\\open.lnk",
     normalize_text("download"): "explorer %USERPROFILE%\\Downloads",
@@ -44,6 +46,8 @@ commands = {
 
 # audio command phrases for different tasks
 audio_files = {
+    normalize_text("google"): ["Please tell me what to search for", "Of course master, please tell me what to search for", "Please type what you want to search for my master"], 
+    normalize_text("youtube"): ["Please tell me what to search for", "Of course master, please tell me what to search for", "Please type what you want to search for my master"],
     normalize_text("github"): ["Of course master, here is GitHub Desktop", "GitHub Desktop is started for you Lord", "But of course master, I am starting GitHub Desktop"], 
     normalize_text("code"): ["Of course master, let's code", "Visual Studio code started for you", "But of course master, you can start coding"],        
     normalize_text("download"): ["Yes master, the download folder is open", "Of course master, I open the download folder", "Here is the download folder my master"],
@@ -59,7 +63,7 @@ audio_files = {
     normalize_text("system info"): ["Here is the system information my excellency", "Of course master, I open the system information"],
     normalize_text("ip address"): ["Here is the IP address my Excellency", "Of course master, I show the IP address"],
 
-    
+
     # USER SKILLs
     normalize_text("your command"): ["Here you can add your own commands", "You can choose in commands what action this command does", "And in audio files, where we are now, you can type what should be said"],
     
