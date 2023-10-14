@@ -2,6 +2,7 @@ import random
 import subprocess
 from fuzzywuzzy import fuzz
 import pyttsx3
+import subprocess
 
 # Funktion zur Umwandlung von Text in Kleinbuchstaben und Entfernung von Akzenten
 def normalize_text(text):
@@ -16,7 +17,7 @@ def is_command_similar(text, command_phrase):
 commands = {
     # SKILLs
     normalize_text("github"): "start %USERPROFILE%\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe",
-    normalize_text("code"): "start skills\\VS-Code-Starter\\start.bat",
+    normalize_text("code"): "start skills\\VS-Code-Starter\\open.lnk",
     normalize_text("öffne den download"): "explorer %USERPROFILE%\\Downloads",
     normalize_text("öffne den desktop"): "explorer %USERPROFILE%\\Desktop\\Desktop",
     normalize_text("öffne einen browser"): 'start "" http://www.google.com',

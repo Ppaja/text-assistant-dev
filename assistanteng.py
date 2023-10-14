@@ -19,7 +19,7 @@ def is_command_similar(text, command_phrase):
 commands = {
     # SKILLs
     normalize_text("github"): "start %USERPROFILE%\\AppData\\Local\\GitHubDesktop\\GitHubDesktop.exe",
-    normalize_text("code"): "start skills\\VS-Code-Starter\\start.bat",
+    normalize_text("code"): "start skills\\VS-Code-Starter\\open.lnk",
     normalize_text("download"): "explorer %USERPROFILE%\\Downloads",
     normalize_text("desktop"): "explorer %USERPROFILE%\\Desktop\\Desktop",
     normalize_text("browser"): 'start "" http://www.google.com',
@@ -58,6 +58,8 @@ audio_files = {
     normalize_text("recycle bin"): ["Here is the wastebasket my excellency", "Of course master, I open the wastebasket"],
     normalize_text("system info"): ["Here is the system information my excellency", "Of course master, I open the system information"],
     normalize_text("ip address"): ["Here is the IP address my Excellency", "Of course master, I show the IP address"],
+
+    
     # USER SKILLs
     normalize_text("your command"): ["Here you can add your own commands", "You can choose in commands what action this command does", "And in audio files, where we are now, you can type what should be said"],
     
