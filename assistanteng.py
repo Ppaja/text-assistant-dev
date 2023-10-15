@@ -1195,7 +1195,7 @@ engine.setProperty('language', 'en')
 
 
 while True:
-    user_input = input("Befehl: ")
+    user_input = input("Command: ")
     user_input_normalized = normalize_text(user_input)
 
     best_match_command = None
