@@ -5,7 +5,9 @@
 </div>
 
 
-Der Python Text Assistant ist ein einfaches Skript, das als Text Assistent fungiert. Mit diesem Skript können Sie Befehle eingeben und den Assistenten verwenden, um bestimmte Aktionen auszuführen. Dieses README-Dokument gibt Ihnen einen Überblick über die Funktionalitäten des Assistenten und wie Sie es an Ihre eigenen Bedürfnisse anpassen können.
+Python Text Assistant is a simple script that acts as a text assistant. With this script, you can enter commands and use the assistant to perform specific actions. 
+
+This README document gives you an overview of the functionality of the assistant and how you can customize it to your own needs
 
 ## Inhaltsverzeichnis
 
@@ -13,7 +15,6 @@ Der Python Text Assistant ist ein einfaches Skript, das als Text Assistent fungi
 - [Usage](#Usage)
 - [Customization](#Customization)
 - [Dependencies](#Dependencies)
-- [Example Commands](#Example Commands)
 
 ## Installation
 
