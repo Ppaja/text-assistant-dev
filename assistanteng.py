@@ -47,6 +47,30 @@ def animated_intro_hello(start_index=0, fast=False):
                  /  ||  ||  \
               ///            \\\
              //|              |\\
+             / \\             // \
+            |U'U|'---____---'|U'U|
+            |____________________|
+                 \          /
+                  |        |
+                  |        | 
+              ____|        |____
+             |\__/|        |\__/|
+             |    /        \    |
+             |  /    TOMY    \  |
+             |/________________\|
+             |__________________|
+        """,
+        r"""
+                 ____________
+                /____________\
+               / /  _\__/_  \ \
+               || // \\// \\ ||
+               || \\/\\//\\// ||
+               |_\_/_<>_\_/_|
+                  /        \
+                 /  ||  ||  \
+              ///            \\\
+             //|              |\\
              / \\   H         // \
             |U'U|'---____---'|U'U|
             |____________________|
@@ -208,7 +232,7 @@ def animated_intro_hello(start_index=0, fast=False):
 
     for i in range(start_index, len(ascii_arts_hello)):
         display_ascii_art(ascii_arts_hello[i])
-        time.sleep(0.2 / 3 if fast else 0.01)
+        time.sleep(0.2 / 3 if fast else 0.2)
 
 def animated_intro_yes(start_index=0, fast=False):
 
